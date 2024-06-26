@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Go Back To The Future - Gophercon 2024</title>
+
+<meta name="description" content="Go Back To The Future - Gophercon 2024">
+<meta name="author" content="Ron Evans">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="lib/css/tomorrow.css">
+
+<link rel="stylesheet" href="css/hybrid.css">
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+
+	<div class="slides">
+		<section>
+		</section>
+	
+	<!-- LIGHTS: All house and stage lights blackout -->
+	<!-- SOUND: Computer audio up -->
+
+		<section data-background-image="./images/static.gif">
+			<audio src="./audio/soft-static-noise-5934.mp3" data-autoplay></audio>
+		</section>
+
+		<section data-background-image="./images/sine_wave.gif">
+			<audio src="./audio/audiocheck.net_sin_440Hz_-3dBFS_3s.mp3" data-autoplay></audio>
+		</section>
+
+		<section data-background-image="./images/roman-abacus.png">
+		</section>
+
+		<section data-background-image="./images/gutenberg-press.jpg">
+		</section>
+
+		<section data-background-image="./images/colossus.jpg">
+		</section>
+
+	<!-- LIGHTS: All house and stage lights, 2 second fade up to "normal" positions -->
+	<!-- SOUND: Computer audio cut volume -->
+
+		<section>
+			<div class="image-container">
+			  <img src="images/pioneer.png">
+			</div>
+			<h2>You are here</h2>          
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2024.jpg">
+			  </div>
+			  <h2>You are here</h2>    
+		  </section>
+
+		<section>
+			<h2>Ron Evans (@deadprogram)</h2>
+		</section>
+
+		<section>
+			<h1>Technologist For Hire</h1>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/thg-logo.png">
+			</div>
+			<h2>hybridgroup.com</h2>
+		</section>
+
+		<section>
+			<h1>Software that makes your hardware work</h1>
+		</section>
+	
+		<section>
+			<h1>Go Back To The Future</h1>
+		</section>
+
+		<section>
+			<h2>An Atemporal History Of Go</h2>
+		</section>
+
+		<section>
+			<h2>1970's</h2>
+		</section>
+
+		<section data-background-image="./images/rob-pike-1970.png">
+		</section>
+
+		<section data-background-image="./images/deadprogram-1970.png">
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/bell-labs-logo.jpg">
+			</div>
+			<h2>Bell Labs</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/google-logo.jpg">
+			</div>
+			<h2>Google</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/original-go-logo.jpg">
+			</div>
+			<h2>Go public release - 2009</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/rubyconf-2010.jpg">
+			</div>
+			<h2>RubyConf 2010 - New Orleans</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/eleanor-mchugh.jpg">
+			</div>
+			<h2>Eleanor McHugh</h2>
+		</section>
+
+		<section>
+			<h2>I Do Not Start Learning Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/rubyconf-2011.jpg">
+			</div>
+			<h2>RubyConf 2011 - New Orleans</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/waza-2012.jpg">
+			</div>
+			<h2>Waza (Jan 2012) - San Francisco</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/rob-pike-waza.jpg">
+			</div>
+			<h2>"Concurrency is not Parallelism"</h2>
+			<h2>Rob Pike</h2>
+		</section>
+
+		<section>
+			<h2>I Still Do Not Start Learning Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/railsconf-2012.jpg">
+			</div>
+			<h2>RailsConf (Apr 2012) - Austin</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/jim-weirich.jpg">
+			</div>
+			<h2>Jim Weirich</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/magmaconf-2012.jpg">
+			</div>
+			<h2>MagmaConf (Jun 2012) - Manzanillo, MX</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/blake-miserany.jpg">
+			</div>
+			<h2>Blake Miserany</h2>
+		</section>
+
+		<section>
+			<h2>I Finally Start Learning Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gobot-logo.png">
+			</div>
+			<h2>Gobot (2013)</h2>
+			<h3>Go Robotics and IoT</h3>
+			<h3>gobot.io</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2014.jpg">
+			</div>
+			<h2>Gophercon 2014, Denver</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/rob-pike-gophercon-2014.jpg">
+			</div>
+			<h2>Go not for embedded quote</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/deadprogram-gophercon-2014.jpg">
+			</div>
+			<h2>Go great for embedded quote</h2>
+		</section>
+
+		<section>
+			<blockquote>"The street finds its own uses for things"<br>
+				- William Gibson
+			</blockquote>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/rob-pike-programs-robot.jpg">
+			</div>
+			<h2>Rob Pike Programming Robot using Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/hackaday-running-golang-intel-edison.png">
+			</div>
+			<h2>"Running Golang On The Intel Edison"</h2>
+			<h3>Hackaday - Sept 25, 2014</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2015.jpg">
+			</div>
+			<h2>Gophercon 2015, Denver</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/bb-8.jpg">
+			</div>
+			<h2>BB-8</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2016.jpg">
+			</div>
+			<h2>Gophercon 2016, Denver</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2017.jpg">
+			</div>
+			<h2>Gophercon 2017, Denver</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gocvlogo.jpg">
+			</div>
+			<h2>GoCV</h2>
+			<h2>Computer Vision Using Go (2018)</h2>
+			<h3>gocv.io</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/hackaday-unlocking-drones-with-go.png">
+			</div>
+			<h2>"Unlocking Drones With Go"</h2>
+			<h3>Hackaday - Apr 27, 2018</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2018.jpg">
+			</div>
+			<h2>Gophercon 2018, Denver</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gocv-talk.jpg">
+			</div>
+			<h2>"Computer Vision Using Go"</h2>
+		</section>
+
+		<section>
+			<h2>Drone demo</h2>
+		</section>
+		<section>
+			<h2>Some code</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/golab-2023/blob/main/demo/hellolife/main.go">See the code</a></h3>
+		</section>
+		<section>
+			<h2>Drone demo</h2>
+		</section>
+
+
+		<section>
+			<div class="image-container">
+				<img src="images/tinygo-logo.png">
+			</div>
+			<h2>TinyGo</h2>
+			<h3>tinygo.org</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2019.jpg">
+			</div>
+			<h2>Gophercon 2019, San Diego</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gopherbot.jpg">
+			</div>
+			<h2>Gopherbot</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/tinygo-talk-2019.jpg">
+			</div>
+			<h2>"Small is The New Big: Go On Microcontrollers"</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/hackaday-tinygo-sept-2019.png">
+			</div>
+			<h2>"TinyGo Brings Go To Arduino"</h2>
+			<h3>Hackaday - Sep 4, 2019</h3>
+			<h3><a href="https://hackaday.com/2019/09/04/tinygo-brings-go-to-arduino/">hackaday.com</a></h3>
+		</section>
+
+		<section>
+			<h2>Pandemic 2020-2021</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/2053-a-go-odyssey.jpg">
+			</div>
+			<h2>2053: A Go Odyssey</h2>
+			<h3>Gotime - Jun 2022</h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2022.jpg">
+			</div>
+			<h2>Gophercon 2022, Oct 2022 - Chicago</h2>
+		</section>
+
+
+		<section>
+			<div class="image-container">
+				<img src="images/hackaday-tinyglobo-2023.png">
+			</div>
+			<h2>"FOSDEM Sees Surprise Pico Balloon Event"</h2>
+			<h3>Hackaday - Feb, 2023</h3>
+			<h3><a href="https://hackaday.com/2019/09/04/tinygo-brings-go-to-arduino/">hackaday.com</a></h3>
+		</section>
+
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2023.jpg">
+			</div>
+			<h2>Gophercon 2023, San Diego</h2>
+		</section>
+
+
+		<section>
+			<div class="image-container">
+				<img src="images/gophercon-2024.jpg">
+			</div>
+			<h2>Gophercon 2024, Chicago</h2>
+		</section>
+
+		<section>
+			<h2>What about the future?</h2>
+		</section>
+
+		<section>
+			<h2>Will the machines make human Go programmers irrelevent?</h2>
+		</section>
+
+		<section>
+			<h2>Will the machines destroy all the humans?</h2>
+		</section>
+
+		<section>
+			<h2>Let's ask the machines themselves</h2>
+		</section>
+
+		<section>
+			<h1>Talking Heads</h1>
+		</section>
+
+		<section>
+			<h2>A Panel Discussion Between Machines</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/llama-logo.jpg">
+			</div>
+			<h2>Llama 3</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/phi-logo.jpg">
+			</div>
+			<h2>Phi 3</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/gemma-logo.jpg">
+			</div>
+			<h2>Gemma</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/talking-heads-diagram.png">
+			</div>
+			<h2>Talking Heads Architecture</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/talking-heads-diagram.png">
+			</div>
+			<h2>Panelist Architecture</h2>
+		</section>
+		
+		<section>
+			<div class="image-container">
+				<img src="images/ollama-logo.jpg">
+			</div>
+			<h2>Ollama</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/langchaingo-logo.jpg">
+			</div>
+			<h2>LangChain Go</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/piper-logo.jpg">
+			</div>
+			<h2>Piper</h2>
+		</section>
+
+		<section>
+			<h2>Panelist</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/">See the code</a></h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/talking-heads-diagram.png">
+			</div>
+			<h2>Dollhead Architecture</h2>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/llama-logo.jpg">
+			</div>
+			<h2>TinyGo</h2>
+		</section>
+
+		<section>
+			<h2>dollhead</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/">See the code</a></h3>
+		</section>
+
+		<section>
+			<div class="image-container">
+				<img src="images/talking-heads-diagram.png">
+			</div>
+			<h2>Moderator Architecture</h2>
+		</section>
+
+		<section>
+			<h2>Moderator</h2>
+			<h3><a target="_blank" href="https://github.com/deadprogram/">See the code</a></h3>
+		</section>
+
+		<section>
+			<h2>Talking heads demo</h2>
+		</section>
+
+		<section>
+			<blockquote>“We tend to overestimate the effect<br>
+				of a technology in the short run<br>
+				and underestimate the effect in the long run.”<br>
+				- Roy Amara
+			</blockquote>
+		</section>
+
+		<section>
+			<h2>Instead of Artificial Intelligence</h2>
+		</section>
+
+		<section>
+			<h2>How about Intelligence Amplification</h2>
+		</section>
+
+		<section>
+			<h2>Human In The Loop</h2>
+		</section>
+
+
+		<section>
+			<h2>Let's Go!</h2>
+		</section>
+
+		<section>
+			<h1>Thank you!</h1>
+			<h2>@deadprogram</h2>
+			<h2>Technologist For Hire</h2>
+		</section>	
+	  </div>
+	</div>
+
+	<!-- <section data-background-iframe="https://www.youtube.com/embed/7x8OElZ6t7c?si=cc2tRgu7g57HCOrY" data-autoplay>
+		</section> -->
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script src="js/hybrid.js"></script>
+
+	<script>
+
+	  // Full list of configuration options available here:
+	  // https://github.com/hakimel/reveal.js#configuration
+	  Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		// 16:9 aspect ratio
+		width: 1280,
+		height: 720,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+		  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		]
+	  });
+
+	</script>
+
+  </body>
+</html>
