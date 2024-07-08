@@ -36,24 +36,20 @@ func startJoystick() {
 		drone.Forward(0)
 		drone.Up(0)
 		drone.Clockwise(0)
-		// tracking = !tracking
-		// if tracking {
-		// 	detectSize = true
-		// 	println("tracking")
-		// } else {
-		// 	detectSize = false
-		// 	println("not tracking")
-		// }
 	})
 	stick.On(joystick.SquarePress, func(data interface{}) {
 		fmt.Println("battery:", flightData.BatteryPercentage)
 	})
 	stick.On(joystick.TrianglePress, func(data interface{}) {
-		drone.TakeOff()
+		drone.ThrowTakeOff()
 		println("Takeoff")
 	})
 	stick.On(joystick.XPress, func(data interface{}) {
 		drone.Land()
+		println("Land")
+	})
+	stick.On(joystick.CirclePress, func(data interface{}) {
+		drone.PalmLand()
 		println("Land")
 	})
 	stick.On(joystick.LeftX, func(data interface{}) {

@@ -16,7 +16,7 @@ build/videodrone:
 	go build -o ./build/videodrone ./demo/videodrone/
 
 videodrone-cpu: builddir build/videodrone
-	./build/videodrone ~/Downloads/yolov8n.onnx
+	./build/videodrone ~/models/yolov8n.onnx
 
 videodrone-gpu: builddir build/videodrone
-	./build/videodrone ~/Downloads/yolov8n.onnx cuda cuda
+	./build/videodrone ~/models/yolov8n.onnx cuda cuda

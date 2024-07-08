@@ -1,10 +1,10 @@
-module github.com/deadprogram/golab-2023
+module github.com/deadprogram/gophercon-2024
 
 go 1.21.1
 
 require (
 	gobot.io/x/gobot/v2 v2.3.0
-	gocv.io/x/gocv v0.37.1-0.20240625162814-dd2b30ec49af
+	gocv.io/x/gocv v0.37.1-0.20240626103437-e7a6ac73190a
 )
 
 require (
