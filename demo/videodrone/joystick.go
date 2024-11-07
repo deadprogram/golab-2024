@@ -11,7 +11,6 @@ import (
 )
 
 var (
-	// joystick
 	joyAdaptor                   = joystick.NewAdaptor("0")
 	stick                        = joystick.NewDriver(joyAdaptor, "dualshock4")
 	leftX, leftY, rightX, rightY atomic.Value
@@ -45,7 +44,7 @@ func startJoystick() {
 		println("Takeoff")
 	})
 	stick.On(joystick.XPress, func(data interface{}) {
-		drone.Land()
+		drone.PalmLand()
 		println("Land")
 	})
 	stick.On(joystick.CirclePress, func(data interface{}) {

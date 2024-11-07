@@ -16,7 +16,17 @@ build/videodrone:
 	go build -o ./build/videodrone ./demo/videodrone/
 
 videodrone-cpu: builddir build/videodrone
-	./build/videodrone ~/models/yolov8n.onnx
+	./build/videodrone ~/models/face_detection_yunet_2023mar.onnx
 
 videodrone-gpu: builddir build/videodrone
-	./build/videodrone ~/models/yolov8n.onnx cuda cuda
+	./build/videodrone ~/models/face_detection_yunet_2023mar.onnx cuda cuda
+
+wasmvision-blur:
+	wasmvision run -p blur
+
+wasmvision-asciify:
+	wasmvision run -p asciify
+
+wasmvision-ollama:
+	wasmvision run -p ollama -p mosaic -logging=error
+

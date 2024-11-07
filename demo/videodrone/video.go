@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"os/exec"
 	"strconv"
-
-	"gocv.io/x/gocv"
 )
 
 const (
@@ -15,9 +13,6 @@ const (
 )
 
 var (
-	// gocv
-	window = gocv.NewWindow("Tello")
-
 	// ffmpeg command to decode video stream from drone
 	ffmpeg = exec.Command("ffmpeg", "-hwaccel", "auto", "-hwaccel_device", "opencl", "-i", "pipe:0",
 		"-nostats", "-flags", "low_delay", "-probesize", "32", "-fflags", "nobuffer+fastseek+flush_packets",

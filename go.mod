@@ -4,7 +4,7 @@ go 1.21.1
 
 require (
 	gobot.io/x/gobot/v2 v2.3.0
-	gocv.io/x/gocv v0.37.1-0.20240626103437-e7a6ac73190a
+	gocv.io/x/gocv v0.39.0
 )
 
 require (

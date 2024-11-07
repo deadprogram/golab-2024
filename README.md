@@ -1,4 +1,4 @@
-# Gophercon 2024
+# GopherconAU 2024
 
 ## "Go Back To The Future"
 

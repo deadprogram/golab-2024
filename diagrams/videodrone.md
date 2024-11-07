@@ -8,7 +8,7 @@ subgraph videodrone
         GoCV<-->dnn
     end
     subgraph dnn
-        YOLOv8
+        YuNet
     end
     subgraph drone
         dualshock4-->flightcontrol
@@ -16,7 +16,7 @@ subgraph videodrone
     end
 end
 subgraph nvidia
-    YOLOv8<-- CUDA -->GPU
+    YuNet<-- CUDA -->GPU
 end
 subgraph DJI Tello
     flightcontrol<-- WiFi -->droneflight

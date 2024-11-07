@@ -1,7 +1,7 @@
 /*
 How to run
 
-	go run ./demo/videodrone
+	go run ./demo/videodrone [model] [backend] [target]
 */
 
 package main
@@ -9,21 +9,22 @@ package main
 import (
 	"fmt"
 	"io"
+	"log"
 
 	"gocv.io/x/gocv"
 )
 
 func main() {
-	net, outputNames, err := prepareDNNModel()
+	net, err := prepareModel()
 	if err != nil {
-		fmt.Println(err)
-		return
+		log.Fatal(err)
 	}
-	defer net.Close()
 
 	go startJoystick()
 	go startDrone()
 	go startVideo()
+
+	window := gocv.NewWindow("Tello")
 
 	// now handle video frames from ffmpeg stream in main thread, to be macOS/Windows friendly
 	for {
@@ -31,14 +32,20 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-		img, _ := gocv.NewMatFromBytes(frameY, frameX, gocv.MatTypeCV8UC3, buf)
-		if img.Empty() {
+		img, err := gocv.NewMatFromBytes(frameY, frameX, gocv.MatTypeCV8UC3, buf)
+		switch {
+		case err != nil:
+			fmt.Println(err)
+			continue
+		case img.Empty():
 			continue
 		}
 
-		detect(net, &img, outputNames)
+		detectFaces(net, &img)
 
 		window.IMShow(img)
+
+		// press any key to close and exit
 		if window.WaitKey(1) >= 0 {
 			go robot.Stop()
 
