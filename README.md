@@ -1,4 +1,4 @@
-# GopherconAU 2024
+# GoLab 2024
 
 ## "Go Back To The Future"
 
